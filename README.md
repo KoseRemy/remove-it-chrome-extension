@@ -1,5 +1,7 @@
+![alt text](image.png)
+
 # remove-it chrome extension
-Basic extension that removes any annoying elements you simply dont want to see.
+Basic extension that removes target elements that you simply dont want to see.
 This is a recreation of an existing extension called "Fuck it" that was removed from the chrome store.
 
 ## Features
@@ -11,9 +13,6 @@ This is a recreation of an existing extension called "Fuck it" that was removed 
 3. Turn on **Developer mode** on the top right.
 4. Click **Load unpacked** and select the folder containing this repo
 
-## Note
-
 ## Tech
 - JavaScript
 - Chrome Extensions API (Manifest V3)
-- Tailwind CSS
