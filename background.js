@@ -11,6 +11,7 @@ chrome.runtime.onInstalled.addListener(async () => {
 // Tells contentscript to do its job when relevant button is clicked.
 // .sendMessage auto sends msg to content script in that tab.
 chrome.contextMenus.onClicked.addListener((item, tab) => {
+    console.log("menu clicked", item.menuItemId);
     if (item.menuItemId === "remove-it") {
         chrome.tabs.sendMessage(tab.id, "remove-it");
     }
