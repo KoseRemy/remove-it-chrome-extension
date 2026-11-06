@@ -4,7 +4,7 @@ chrome.runtime.onInstalled.addListener(async () => {
       id: "remove-it",
       title: "💢 remove-it",
       type: 'normal',
-      contexts: ['selection']
+      contexts: ['all']
     });
 });
 
