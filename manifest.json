@@ -1,17 +1,21 @@
 {
-    "name": "Target History Remover",
-    "version": "0.1.0",
-    "description": "Removes target history from browser",
-    "permissions": ["scripting", "tabs", "history", "storage"],
-    "background": { "service_worker": "background.js" },
-    "action": {
-      "default_icon": {
-        "16": "assets/icon.png",
-        "24": "assets/icon.png",
-        "32": "assets/icon.png"
-      },
-      "default_title": "Target History Remover",
-      "default_popup": "popup.html"
-    },
-    "manifest_version": 3
+  "manifest_version": 3,
+  "name": "Remove-it",
+  "version": "1.0",
+  "permissions": ["contextMenus","activeTab","scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/icon.png",
+      "24": "assets/icon.png",
+      "32": "assets/icon.png"},
+    "default_title": "Remove-it"}
 }
