@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Remove-it",
   "version": "1.0",
-  "permissions": ["contextMenus","activeTab","scripting"],
+  "permissions": ["contextMenus"],
   "background": {
     "service_worker": "background.js"
   },
